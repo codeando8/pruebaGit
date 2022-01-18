@@ -5,7 +5,7 @@ class DataBase:
 
     def seleccionarCantidad(self, codigo):
         sql = 'SELECT cantidad FROM Datos_articulo WHERE Codigo_articulo={}'.format(codigo)
-        cantidad = -1
+        cantidad = -2
         try:
             self.cursor.execute(sql)
             item = self.cursor.fetchone()
